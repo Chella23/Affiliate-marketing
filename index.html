@@ -86,7 +86,12 @@
         const searchButton = document.querySelector("button");
         searchButton.addEventListener("click", searchProducts);
     });
-
+    // Function to handle the Enter key press for the search bar
+    document.getElementById('search-bar').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') { // If 'Enter' key is pressed
+            searchProducts(); // Call the function to perform the search
+        }
+    });
     function searchProducts() {
         const query = escapeHTML(document.getElementById('search-bar').value.toLowerCase());
         const products = document.querySelectorAll('.product');
