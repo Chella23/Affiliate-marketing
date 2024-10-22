@@ -9,19 +9,21 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .search-container {
     margin: 20px 0;
-
+    text-align: center; /* Center the search bar */
 }
 
 .search-container input {
     padding: 10px;
     width: 200px; /* Adjust width as needed */
     border-radius: 20px;
+    border: 1px solid #ddd;
 }
 
 .search-container button {
@@ -29,6 +31,7 @@ header {
     background-color: #333;
     color: white;
     border-radius: 20px;
+    border: none;
     cursor: pointer;
 }
 
@@ -40,9 +43,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    overflow: hidden;
 }
 
 .product {
@@ -91,7 +93,54 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-
+    position: relative;
     width: 100%;
     bottom: 0;
 }
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (width between 600px to 1024px) */
+@media (max-width: 1024px) {
+    .product {
+        width: calc(45% - 20px); /* Make the products wider on tablets */
+    }
+
+    header {
+        font-size: 1.3rem;
+    }
+
+    .search-container input {
+        width: 180px;
+    }
+}
+
+/* For mobile devices (width less than 600px) */
+@media (max-width: 600px) {
+    .product {
+        width: calc(100% - 20px); /* Full width for each product on mobile */
+    }
+
+    header {
+        font-size: 1.1rem; /* Smaller header text */
+        padding: 15px; /* Smaller padding */
+    }
+
+    .search-container input {
+        width: 150px;
+    }
+
+    .search-container button {
+        padding: 8px; /* Smaller button padding */
+    }
+
+    .product img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .product button {
+        padding: 8px 12px;
+    }
+}
+
