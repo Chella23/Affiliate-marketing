@@ -39,6 +39,20 @@ header {
     background-color: #555;
 }
 
+.homelink a{
+    font-family: sans-serif;
+    color:#f4f4f4;
+}
+.homelink button{
+    padding: 10px 15px;
+    background-color: #1a1217; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
