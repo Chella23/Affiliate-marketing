@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Main Body Styles */
 body {
     font-family: Arial, sans-serif;
@@ -207,29 +206,15 @@ header {
     background: none;
     border: none;
     color: #4CAF50;
-    font-size: 0.75rem;
-    padding: 3px 0;
+    font-size: 0.7rem;
+    padding: 2px 0;
     cursor: pointer;
     margin-top: 5px;
     font-weight: bold;
-    display: inline-block;
 }
 
 .read-more:hover {
     text-decoration: underline;
-}
-
-/* When expanded */
-.product-description.expanded .truncated {
-    display: none;
-}
-
-.product-description.expanded .full-text {
-    display: block;
-}
-
-.product-description.expanded .read-more {
-    color: #f44336;
 }
 
 /* Product Button */
@@ -380,184 +365,3 @@ footer p {
         padding: 10px;
     }
 }
-=======
-/* CSS File: style.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: linear-gradient(45deg, #0b4a91, #5b2dc6, #0576a3);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-style: oblique;
-    font-family: sans-serif;
-}
-
-
-.search-container {
-    margin: 20px 0;
-    text-align: center; /* Center the search bar */
-}
-
-.search-container input {
-    padding: 10px;
-    width: 200px; /* Adjust width as needed */
-    border-radius: 20px;
-    border: 1px solid #ddd;
-}
-
-.search-container button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #555;
-}
-
-.homelink a{
-    font-family: sans-serif;
-    color:#f4f4f4;
-}
-.homelink button{
-    padding: 10px 15px;
-    background-color: #1a1217; /* Green background */
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-}
-
-.product {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 20px;
-    width: calc(30% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product img {
-    width: 100px;
-    height: 100px;
-}
-
-.product a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.product button {
-    padding: 10px 15px;
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition */
-}
-
-.product button a {
-    color: white; /* White text for links inside buttons */
-    text-decoration: none;
-}
-
-.product button:hover {
-    background: linear-gradient(45deg, #0b4a91, #5b2dc6, #0576a3);
-    transform: scale(1.05); /* Scale up slightly on hover */
-}
-
-.product button:active {
-    background-color: #388e3c; /* Even darker green on click */
-    transform: scale(0.95); /* Scale down slightly on click */
-}
-
-p{
-    font-style: oblique;
-    font-family: sans-serif;
-}
-h2{
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Media Queries for Responsive Design */
-
-/* For tablets (width between 600px to 1024px) */
-@media (max-width: 1024px) {
-    .product {
-        width: calc(45% - 20px); /* Make the products wider on tablets */
-    }
-
-    header {
-        font-size: 1.3rem;
-    }
-
-    .search-container input {
-        width: 180px;
-    }
-}
-
-/* For mobile devices (width less than 600px) */
-@media (max-width: 600px) {
-    .product {
-        width: calc(100% - 20px); /* Full width for each product on mobile */
-    }
-
-    header {
-        font-size: 1.1rem; /* Smaller header text */
-        padding: 15px; /* Smaller padding */
-    }
-
-    .search-container input {
-        width: 150px;
-    }
-
-    .search-container button {
-        padding: 8px; /* Smaller button padding */
-    }
-
-    
-    .product img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .product button {
-        padding: 8px 12px;
-    }
-}
-
->>>>>>> 18f6fb1732c030f961b46a5366d01cfbb50b6b74
