@@ -271,13 +271,13 @@ footer p {
 /* Responsive Design */
 @media (max-width: 1600px) {
     .container {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 @media (max-width: 1200px) {
     .container {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     
     .header-title {
@@ -291,7 +291,7 @@ footer p {
 
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .header-container {
