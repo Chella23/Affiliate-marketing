@@ -1,13 +1,12 @@
 const express = require('express');
-const cors = require('cors');
 const app = express();
+const cors = require('cors');
+const productRoutes = require('./routes/productRoutes');
 
 app.use(cors());
-app.use(express.json()); // very important for POST
+app.use(express.json());
 
-const productRoutes = require('./routes/productRoutes');
 app.use('/api/products', productRoutes);
 
-app.listen(3001, () => {
-  console.log('Server running on http://localhost:3001');
-});
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
